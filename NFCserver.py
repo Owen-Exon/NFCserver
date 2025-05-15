@@ -5,7 +5,7 @@ import os
 ahk = AHK()
 app = Flask(__name__)
 
-@app.route('/go', methods=['GET'])
+@app.route('/google', methods=['GET'])
 def go():
     os.popen('start "" "https://www.google.com"')
     return "Success" , 200
